@@ -34,7 +34,7 @@ Payments.authorize = function authorize(gatewayToken, paymentMethod, amount, cur
 		.nodeify(cb);
 };
 
-Payments.verify = function verify(gatewayToken, paymentMethod, currency, info, cb) {
+Payments.verify = function verify(gatewayToken, paymentMethod, retain, currency, info, cb) {
 	// Allow caller to pass in gateway & payment method objects
 	gatewayToken = gatewayToken.token || gatewayToken;
 	paymentMethod = paymentMethod.token || paymentMethod;
@@ -46,6 +46,7 @@ Payments.verify = function verify(gatewayToken, paymentMethod, currency, info, c
 
 	var postData = {
 		paymentMethodToken: paymentMethod,
+		retainOnSuccess: retain,
 		currencyCode: currency
 	};
 

@@ -35,32 +35,32 @@ tw4t
 ## stream-via
 
 * [stream-via](#module_stream-via)
-    * [via(throughFunction, [options])](#exp_module_stream-via--via) ⇒ <code>[Duplex](https://nodejs.org/api/stream.html#stream_class_stream_duplex)</code> ⏏
-        * [.async(throughFunction, [options])](#module_stream-via--via.async) ⇒ <code>[Duplex](https://nodejs.org/api/stream.html#stream_class_stream_duplex)</code>
+    * [via(throughFunction, [options])](#exp_module_stream-via--via) ⇒ [<code>Duplex</code>](https://nodejs.org/api/stream.html#stream_class_stream_duplex) ⏏
+        * [.async(throughFunction, [options])](#module_stream-via--via.async) ⇒ [<code>Duplex</code>](https://nodejs.org/api/stream.html#stream_class_stream_duplex)
         * [~throughFunction](#module_stream-via--via..throughFunction) : <code>function</code>
 
 <a name="exp_module_stream-via--via"></a>
 
-### via(throughFunction, [options]) ⇒ <code>[Duplex](https://nodejs.org/api/stream.html#stream_class_stream_duplex)</code> ⏏
+### via(throughFunction, [options]) ⇒ [<code>Duplex</code>](https://nodejs.org/api/stream.html#stream_class_stream_duplex) ⏏
 **Kind**: Exported function  
 **Params**
 
-- throughFunction <code>[throughFunction](#module_stream-via--via..throughFunction)</code> - a function to process each chunk
+- throughFunction [<code>throughFunction</code>](#module_stream-via--via..throughFunction) - a function to process each chunk
 - [options] <code>object</code> - passed to the returned stream constructor
 
 <a name="module_stream-via--via.async"></a>
 
-#### via.async(throughFunction, [options]) ⇒ <code>[Duplex](https://nodejs.org/api/stream.html#stream_class_stream_duplex)</code>
-**Kind**: static method of <code>[via](#exp_module_stream-via--via)</code>  
+#### via.async(throughFunction, [options]) ⇒ [<code>Duplex</code>](https://nodejs.org/api/stream.html#stream_class_stream_duplex)
+**Kind**: static method of [<code>via</code>](#exp_module_stream-via--via)  
 **Params**
 
-- throughFunction <code>[throughFunction](#module_stream-via--via..throughFunction)</code> - a function to process each chunk
+- throughFunction [<code>throughFunction</code>](#module_stream-via--via..throughFunction) - a function to process each chunk
 - [options] <code>object</code> - passed to the returned stream constructor
 
 <a name="module_stream-via--via..throughFunction"></a>
 
 #### via~throughFunction : <code>function</code>
-**Kind**: inner typedef of <code>[via](#exp_module_stream-via--via)</code>  
+**Kind**: inner typedef of [<code>via</code>](#exp_module_stream-via--via)  
 **Params**
 
 - chunk <code>buffer</code> | <code>string</code>
@@ -71,4 +71,4 @@ tw4t
 
 * * *
 
-&copy; 2015-16 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-17 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).

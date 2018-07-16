@@ -1,17 +1,19 @@
-[![view on npm](http://img.shields.io/npm/v/collect-all.svg)](https://www.npmjs.org/package/collect-all)
-[![npm module downloads](http://img.shields.io/npm/dt/collect-all.svg)](https://www.npmjs.org/package/collect-all)
+[![view on npm](https://img.shields.io/npm/v/collect-all.svg)](https://www.npmjs.org/package/collect-all)
+[![npm module downloads](https://img.shields.io/npm/dt/collect-all.svg)](https://www.npmjs.org/package/collect-all)
 [![Build Status](https://travis-ci.org/75lb/collect-all.svg?branch=master)](https://travis-ci.org/75lb/collect-all)
 [![Dependency Status](https://david-dm.org/75lb/collect-all.svg)](https://david-dm.org/75lb/collect-all)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 <a name="module_collect-all"></a>
+
 ## collect-all
 Returns a stream which fires a callback and becomes readable once all input is received.
 
 By default the callback is invoked with a Buffer instance containing all concatenated input. If you set the option `{ objectMode: true }` the callback is invoked with an array containing all objects received.
 
 <a name="exp_module_collect-all--collectAll"></a>
-### collectAll([callback], [options]) ⇒ <code>[Duplex](https://nodejs.org/api/stream.html#stream_class_stream_duplex)</code> ⏏
+
+### collectAll([callback], [options]) ⇒ [<code>Duplex</code>](https://nodejs.org/api/stream.html#stream_class_stream_duplex) ⏏
 **Kind**: Exported function  
 
 | Param | Type | Description |
@@ -47,4 +49,4 @@ stream.end({}) // outputs 'Objects collected: 3'
 
 * * *
 
-&copy; 2015-16 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2015-17 Lloyd Brookes \<75pound@gmail.com\>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).

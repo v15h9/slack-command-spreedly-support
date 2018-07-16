@@ -53,6 +53,35 @@ util.doRequest = function doRequest(urlBase, key, secret, opts) {
 		});
 };
 
+util.doTranscriptRequest = function doTranscriptRequest(urlBase, key, secret, opts) {
+	// Add auth information to basic request options
+	var reqOpts = _.extend({}, {
+		auth: {
+			user: key,
+			pass: secret
+		},
+		json: false
+	}, opts);
+
+	// Add the base to the specified URL
+	reqOpts.url = urlBase + reqOpts.url;
+
+	if(typeof reqOpts.body !== 'undefined') {
+		reqOpts.headers = reqOpts.headers || {};
+	}
+
+	// Return promise
+	return prequest(reqOpts) // Raw HTTP request
+		.then(function(result) {
+			return result;
+		})
+		.catch(function(err){
+				return err instanceof IncomingMessage;
+			}, function(err) {
+				return Promise.reject(err);
+		});
+};
+
 util.parseSpreedlyResponse = function parseSpreedlyResponse(value) {
 	if(typeof value === 'string') {
 		return value.trim();

@@ -31,6 +31,10 @@ var Spreedly = module.exports = function Spreedly(environmentKey, accessSecret, 
 	this._doRequest = function(reqOpts) {
 		return util.doRequest(urlBase, environmentKey, accessSecret, reqOpts);
 	};
+
+	this._doTranscriptRequest = function(reqOpts) {
+		return util.doTranscriptRequest(urlBase, environmentKey, accessSecret, reqOpts);
+	};
 };
 
 // Load modules from the modules folder to extend the prototype

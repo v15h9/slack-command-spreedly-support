@@ -38,3 +38,22 @@ Transactions.showTransaction = function showTransaction(transactionToken, cb) {
 		.then(util.extractRoot())
 		.nodeify(cb);
 };
+
+/**
+ * Retrieves a full gateway element and details about a gateway, based on the token.
+ *
+ * @class Spreedly
+ * @module Gateways
+ * @param {String|Object} gatewayToken A gateway token, or a gateway element containing a token of the gateway
+ * @param {Function} [cb] A Node.js-style callback
+ * @returns {Promise} Bluebird promise that is resolved with the gateway element
+ */
+Transactions.showTranscript = function showTranscript(transactionToken, cb) {
+	// Allow caller to pass in gateway objects
+	transactionToken = transactionToken.token || transactionToken;
+
+	return this._doTranscriptRequest({
+		url: 'transactions/' + transactionToken + '/transcript'
+	})
+		.nodeify(cb);
+};
