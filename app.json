@@ -1,0 +1,7 @@
+{
+    "name": "Spreedly Support Slack Command",
+    "description": "A slack command to check Spreedly tokens for Gateways, Transactions, Transcripts and Payment Methods",
+    "repository": "https://github.com/Vishalashah/slack-command-spreedly-support.git",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["spreedly", "slack", "support"]
+  }
