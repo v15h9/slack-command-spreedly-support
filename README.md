@@ -34,12 +34,12 @@ Slack command is up and running. Happy Support!
 
 ## Examples
 
-Slack command help
+**Slack command help**
 ```
 /spreedly
 ```
 
-View Gateway Details
+**View Gateway Details**
 ```
 /spreedly g T11bJAANtTWnxl36GYjKWvbNK0g
 ```
@@ -48,7 +48,7 @@ or
 /spreedly gateway T11bJAANtTWnxl36GYjKWvbNK0g
 ```
 
-View Payment Method Details
+**View Payment Method Details**
 ```
 /spreedly pm 1rpKvP8zOUhj4Y9EDrIoIYQzzD5
 ```
@@ -57,7 +57,7 @@ or
 /spreedly payment-method 1rpKvP8zOUhj4Y9EDrIoIYQzzD5
 ```
 
-View Transaction Details
+**View Transaction Details**
 ```
 /spreedly t LWKjclL4d5VHI3YyQWgdLrOePqw
 ```
@@ -66,7 +66,7 @@ or
 /spreedly transaction LWKjclL4d5VHI3YyQWgdLrOePqw
 ```
 
-View Transcript
+**View Transcript**
 ```
 /spreedly ts LWKjclL4d5VHI3YyQWgdLrOePqw
 ```
