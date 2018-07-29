@@ -20,14 +20,15 @@ A step by step guide to get the slack command working
 * Go to Settings of the heroku app and copy the domain URL in section Domains and certificates
 * Go to Slack's App Directory and install app [Slash Commands](https://slack.com/apps/A0F82E8CA-slash-commands)
 * Once the Slack app is installed, choose *Add Configuration*
-* App Configuration
-** Choose a command: */spreedly*
-** Select Add Slash Command Integration
-** Scroll to Integration Settins section
-** URL: *[HEROKU_DOMAIN_URL]api/slack/spreedly*
-** Method: *GET*
-** Customize Name: *Spreedly Support*
-** Select Save Integration
+
+**App Configuration**
+* Choose a command: */spreedly*
+* Select Add Slash Command Integration
+* Scroll to Integration Settins section
+* URL: *[HEROKU_DOMAIN_URL]api/slack/spreedly*
+* Method: *GET*
+* Customize Name: *Spreedly Support*
+* Select Save Integration
 
 Slack command is up and running. Happy Support!
 
