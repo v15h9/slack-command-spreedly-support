@@ -48,6 +48,15 @@ or
 /spreedly gateway T11bJAANtTWnxl36GYjKWvbNK0g
 ```
 
+**Get Gateway Transactions**
+```
+/spreedly gt T11bJAANtTWnxl36GYjKWvbNK0g
+```
+or
+```
+/spreedly gateway-transactions T11bJAANtTWnxl36GYjKWvbNK0g
+```
+
 **View Payment Method Details**
 ```
 /spreedly pm 1rpKvP8zOUhj4Y9EDrIoIYQzzD5
@@ -55,6 +64,15 @@ or
 or
 ```
 /spreedly payment-method 1rpKvP8zOUhj4Y9EDrIoIYQzzD5
+```
+
+**Get Payment Method Transactions**
+```
+/spreedly pmt 1rpKvP8zOUhj4Y9EDrIoIYQzzD5
+```
+or
+```
+/spreedly payment-method-transactions 1rpKvP8zOUhj4Y9EDrIoIYQzzD5
 ```
 
 **View Transaction Details**
